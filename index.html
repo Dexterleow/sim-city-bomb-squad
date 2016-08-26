@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Sim City Bomb Squad</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="bomb.js"></script>
-  </head>
-  <body class="unexploded">
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Sim City Bomb Squad</title>
+  <link rel="stylesheet" href="/Users/dexterleow/Desktop/Homework.23rd.August/sim-city-bomb-squad/style.css">
+</head>
+
+<body>
+  <div id = "backgroundImage">
+    <div class="bomb">
+      <div id="timer" class="active">0:00:00</div>
+      <div class="wires">
+        <img id ="blue-wire" src="img/uncut-blue-wire.png">
+        <img id ="green-wire" src="img/uncut-green-wire.png">
+        <img id ="red-wire" src="img/uncut-red-wire.png">
+        <img id ="white-wire" src="img/uncut-white-wire.png">
+        <img id ="yellow-wire" src="img/uncut-yellow-wire.png">
+      </div>
+      <button id="reset">reset</button>
+    </div>
+  </div>
+
+  <div>
+    <audio id="siren" loop src ="sounds/Siren.wav" type="audio/wav"></audio>
+    <audio id="explode" loop src ="sounds/BldgExplode.wav" type="audio/wav"></audio>
+    <audio id="cheer" loop src ="sounds/CrowdYay.wav" type="audio/wav"></audio>
+    <audio id="electricity" loop src ="sounds/Electricity.wav" type="audio/wav"></audio>
+    <audio id="success" loop src ="sounds/success.ogg" type="audio/wav"></audio>
+  </div>
+
+  <script src="bomb.js"></script>
+</body>
 </html>
